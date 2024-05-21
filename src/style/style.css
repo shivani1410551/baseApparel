@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: url("../public/images/bg-pattern-desktop.svg"), hsl(0deg, 100%, 98%);
+}
+body .container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  max-height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .container .text-side {
+  max-width: 500px;
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 2rem;
+}
+body .container .text-side img {
+  height: 30px;
+}
+body .container .text-side .description span {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 12px;
+  line-height: 3.4rem;
+}
+body .container .text-side .description span h1 {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+body .container .text-side .description span h2 {
+  color: hsl(0deg, 6%, 24%);
+  font-weight: 600;
+}
+body .container .text-side .description p {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0deg, 36%, 70%);
+  width: 400px;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 15px;
+  padding-top: 15px;
+}
+body .container .text-side Form {
+  position: relative;
+  top: -3.5rem;
+}
+body .container .text-side Form #email {
+  padding: 0.8rem 1rem;
+  border: 0.2px solid hsl(0deg, 6%, 24%);
+  border-radius: 30px;
+  width: 400px;
+  color: hsl(0deg, 6%, 24%);
+}
+body .container .text-side Form #email::-moz-placeholder {
+  color: hsl(0deg, 36%, 70%);
+  font-size: 15px;
+  opacity: 0.3;
+  text-indent: 10px;
+}
+body .container .text-side Form #email:-ms-input-placeholder {
+  color: hsl(0deg, 36%, 70%);
+  font-size: 15px;
+  opacity: 0.3;
+  text-indent: 10px;
+}
+body .container .text-side Form #email::placeholder {
+  color: hsl(0deg, 36%, 70%);
+  font-size: 15px;
+  opacity: 0.3;
+  text-indent: 10px;
+}
+body .container .text-side Form button[type=submit] {
+  position: absolute;
+  right: -20px;
+  border: none;
+  outline: none;
+  padding: 0.475rem 1rem;
+  width: 90px;
+  z-index: 10;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border-radius: 30px;
+}
+body .container .text-side Form button[type=submit] .submit_img {
+  font-size: 30px;
+}
+body .container .text-side Form button[type=submit]:hover {
+  opacity: 0.9;
+}
+body .container .text-side Form .error {
+  color: hsl(0deg, 93%, 68%);
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+body .picture-side {
+  width: 100%;
+  background: url("../public/images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position-x: 100%;
+  background-position-y: 0%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url("../public/images/bg-pattern-desktop.svg"), hsl(0deg, 100%, 98%);
+  }
+  body .container {
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .container .text-side {
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  body .container .text-side img {
+    height: 24px;
+  }
+  body .container .text-side .description span {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 12px;
+    line-height: 2.6rem;
+  }
+  body .container .text-side .description span h1 {
+    color: hsl(0deg, 36%, 70%);
+    font-weight: 300;
+  }
+  body .container .text-side .description span h2 {
+    color: hsl(0deg, 6%, 24%);
+    font-weight: 600;
+  }
+  body .container .text-side .description p {
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0deg, 36%, 70%);
+    width: 300px;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  body .container .text-side Form {
+    position: relative;
+    top: -3.5rem;
+  }
+  body .container .text-side Form #email {
+    padding: 0.8rem 1rem;
+    border: 0.2px solid hsl(0deg, 6%, 24%);
+    border-radius: 30px;
+    width: 250px;
+    color: hsl(0deg, 6%, 24%);
+  }
+  body .container .text-side Form #email::-moz-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form #email:-ms-input-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form #email::placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form button[type=submit] {
+    position: absolute;
+    right: -20px;
+    top: 3px;
+    border: none;
+    outline: none;
+    padding: 0.68rem 1.2rem;
+    width: 90px;
+    z-index: 10;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+    border-radius: 30px;
+  }
+  body .container .text-side Form button[type=submit] .submit_img {
+    font-size: 30px;
+  }
+  body .container .text-side Form button[type=submit]:hover {
+    opacity: 0.9;
+  }
+  body .container .text-side Form .error {
+    color: hsl(0deg, 93%, 68%);
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  body .picture-side {
+    width: 100%;
+    background: url("../public/images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-x: 100%;
+    background-position-y: 0%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background: url("../public/images/bg-pattern-desktop.svg"), hsl(0deg, 100%, 98%);
+  }
+  body .container {
+    width: 100%;
+    max-width: 1284px;
+    height: 100%;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .container .text-side {
+    max-width: 500px;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 2rem;
+  }
+  body .container .text-side img {
+    height: 30px;
+  }
+  body .container .text-side .description span {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 12px;
+    line-height: 3.8rem;
+  }
+  body .container .text-side .description span h1 {
+    color: hsl(0deg, 36%, 70%);
+    font-weight: 300;
+  }
+  body .container .text-side .description span h2 {
+    color: hsl(0deg, 6%, 24%);
+    font-weight: 600;
+  }
+  body .container .text-side .description p {
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(0deg, 36%, 70%);
+    width: 450px;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  body .container .text-side Form {
+    position: relative;
+    top: -3.5rem;
+  }
+  body .container .text-side Form #email {
+    padding: 0.8rem 1rem;
+    border: 0.2px solid hsl(0deg, 6%, 24%);
+    border-radius: 30px;
+    width: 350px;
+    color: hsl(0deg, 6%, 24%);
+  }
+  body .container .text-side Form #email::-moz-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form #email:-ms-input-placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form #email::placeholder {
+    color: hsl(0deg, 36%, 70%);
+    font-size: 15px;
+    opacity: 0.3;
+    text-indent: 10px;
+  }
+  body .container .text-side Form button[type=submit] {
+    position: absolute;
+    right: -20px;
+    top: 2px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 90px;
+    z-index: 10;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+    border-radius: 30px;
+  }
+  body .container .text-side Form button[type=submit] .submit_img {
+    font-size: 30px;
+  }
+  body .container .text-side Form button[type=submit]:hover {
+    opacity: 0.9;
+  }
+  body .container .text-side Form .error {
+    color: hsl(0deg, 93%, 68%);
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  body .picture-side {
+    width: 100%;
+    background: url("../public/images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-x: 100%;
+    background-position-y: 0%;
+    height: 100vh;
+  }
+}/*# sourceMappingURL=style.css.map */
