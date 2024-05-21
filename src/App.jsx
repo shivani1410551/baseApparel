@@ -4,6 +4,7 @@ import React from "react";
 import { ErrorMessage, useFormik } from "formik";
 import { Formik, Form, Field } from "formik";
 import { FormSchema } from "./FormSchema";
+import ArrowImg from "/public/images/icon-arrow.svg";
 function App() {
   const formInitialValues = {
     email: "",
@@ -56,7 +57,7 @@ function App() {
               </label>
               <button type="submit">
                 <img
-                  src="/images/icon-arrow.svg"
+                  src={ArrowImg}
                   alt="Submit button"
                   className="submit_img"
                 />
